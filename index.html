@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 75, 75);
+        }
+
+        h1 {
+            color: rgb(255, 0, 0);
+            text-align: center;
+            background-color: rgb(255, 103, 95);
+            border: 3px solid white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            animation: myAnim 2s ease 0s 1 normal forwards;
+            
+        }
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+        h2 {
+            color: rgb(255, 0, 0);
+            text-align: center;
+
+        }
+        p{
+            color:white
+        }
+        div{
+            color:white
+        }
+        h3{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Weather app</h1>
+    </fieldset>
+    <br>
+    <fieldset>
+        <h2>check todays Weather</h2>
+        <div class="weather card">
+<h2> Todays Weather</h2>
+<div class="weather icon">cloudy</div>
+<p id="temprature">28 degree</p>
+<p class="details">state:punjab</p>
+<p class="details">condition:partially cloud</p>
+<p class="details">humidity:62%</p>
+<p class="details">wind speed:12 km/h</p>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+        <h2 class="week"> Weekly forcast</h2>
+        <div class="forcast section"></div>
+        <h3 class="forcast title">Next 5 days</h3>
+        <p class="monday">Monday --> sunny</p>
+        <p class="tuesday">Tuesday-->cloudy</p>
+        <p class="wednesday">Wednesday-->sunny</p>
+        <p class="thursday">Thursday-->rainy</p>
+        <p class="friday">Friday-->partially cloudy</p>
+        </fieldset>
+</body>
+</html>
